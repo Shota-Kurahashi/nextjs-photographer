@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { Canvas } from "../components/Canvas";
 import { Layout } from "../components/Layout";
+import { useStateContext } from "../context/StateProvider";
 
 const Triangle = () => {
+  const { setMagnification } = useStateContext();
+
   const [inputMagnification, setInputMagnification] = useState("");
-  const [magnification, setMagnification] = useState(1);
 
   const changeMagnification = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -32,7 +34,7 @@ const Triangle = () => {
           />
           <button className="btn text-base md:text-xl">変更する</button>
         </form>
-        <Canvas magnification={magnification} />
+        <Canvas />
       </div>
     </Layout>
   );

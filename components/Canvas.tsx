@@ -1,10 +1,8 @@
 import React, { FC, useEffect, useRef } from "react";
+import { useStateContext } from "../context/StateProvider";
 
-type Props = {
-  magnification: number;
-};
-
-const Canvas: FC<Props> = ({ magnification }) => {
+const Canvas: FC = () => {
+  const { magnification } = useStateContext();
   const canvasRef = useRef(null);
 
   const getContext = (): CanvasRenderingContext2D => {

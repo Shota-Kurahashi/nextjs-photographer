@@ -1,11 +1,14 @@
 import type { NextPage } from "next";
 import { Layout } from "../components/Layout";
+import { StateProvider } from "../context/StateProvider";
 
 const Home: NextPage = () => {
   return (
-    <Layout title="Home">
-      <div>home</div>
-    </Layout>
+    <StateProvider>
+      <Layout title="Home">
+        <div>home</div>
+      </Layout>
+    </StateProvider>
   );
 };
 
