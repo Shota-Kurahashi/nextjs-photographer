@@ -15,7 +15,7 @@ export const Layout: FC<Title> = ({ title, children }) => {
       <Head>
         <title>{title}</title>
       </Head>
-      <header className="fixed flex h-16 w-full items-center justify-around border-b">
+      <header className=" flex h-16 w-full items-center justify-around border-b">
         <Link href="/triangle" passHref>
           <div
             className={`my-4 cursor-pointer py-4 px-6 text-2xl hover:bg-gray-100 ${
@@ -35,7 +35,7 @@ export const Layout: FC<Title> = ({ title, children }) => {
           </div>
         </Link>
       </header>
-      <main className=" flex h-full w-full px-8 pt-24">{children}</main>
+      <main className=" flex h-full w-full px-8 pt-8">{children}</main>
     </div>
   );
 };
