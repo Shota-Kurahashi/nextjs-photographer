@@ -19,8 +19,8 @@ const Triangle = () => {
   };
 
   return (
-    <Layout title="triangle">
-      <div className=" flex h-full w-full flex-col ">
+    <Layout title="triangle ">
+      <div className=" flex h-full w-full flex-col  ">
         <form
           className="items-evenly flex  w-full justify-center "
           onSubmit={changeMagnification}

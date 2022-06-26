@@ -34,7 +34,7 @@ const Canvas: FC = () => {
   }, [magnification, beside, vertical]);
 
   return (
-    <div className=" my-8 h-full w-full">
+    <div className=" my-8 h-full w-full ">
       <canvas className="canvas main " ref={canvasRef} />
     </div>
   );

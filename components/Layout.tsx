@@ -11,7 +11,7 @@ export const Layout: FC<Title> = ({ title, children }) => {
   const router = useRouter();
 
   return (
-    <div className="h-screen w-screen">
+    <div className="h-screen w-screen ">
       <Head>
         <title>{title}</title>
       </Head>
