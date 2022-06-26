@@ -20,11 +20,8 @@ const Triangle = () => {
 
   return (
     <Layout title="triangle ">
-      <div className=" flex h-full w-full flex-col  ">
-        <form
-          className="items-evenly flex  w-full justify-center "
-          onSubmit={changeMagnification}
-        >
+      <div className=" flex h-full w-full flex-col items-center  ">
+        <form className="flex w-full " onSubmit={changeMagnification}>
           <input
             type="text"
             step="0.01"
@@ -33,7 +30,7 @@ const Triangle = () => {
               setInputMagnification(e.target.value);
             }}
             placeholder="倍率"
-            className=" mr-4 w-1/2 rounded-md border px-4 py-2 md:w-1/3"
+            className=" w-1/2 rounded-md border px-4 py-2 md:mr-4 md:w-1/3"
           />
           <input
             type="text"
@@ -43,7 +40,7 @@ const Triangle = () => {
               setInputVertical(e.target.value);
             }}
             placeholder="縦 (cm)"
-            className=" mr-4 w-1/2 rounded-md border px-4 py-2 md:w-1/3"
+            className=" w-1/2 rounded-md border px-4 py-2 md:mr-4 md:w-1/3"
           />
           <input
             type="text"
@@ -53,7 +50,7 @@ const Triangle = () => {
               setInputBeside(e.target.value);
             }}
             placeholder="横 (cm)"
-            className=" mr-4 w-1/2 rounded-md border px-4 py-2 md:w-1/3"
+            className=" w-1/2 rounded-md border px-4 py-2 md:mr-4 md:w-1/3"
           />
           <button className="btn text-base md:text-xl">変更する</button>
         </form>

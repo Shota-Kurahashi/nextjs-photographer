@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 .main {
-  background-image: linear-gradient(0deg, transparent 99px, #333 100px),
-    linear-gradient(90deg, transparent 99px, #333 100px);
+  background-image: linear-gradient(0deg, transparent 9px, #333 10px),
+    linear-gradient(90deg, transparent 9px, #333 10px);
   background-color: rgb(248, 248, 248);
-  background-size: 100px 100px;
+  background-size: 10px 10px;
 }
