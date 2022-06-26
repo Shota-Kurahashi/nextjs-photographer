@@ -25,8 +25,8 @@ const Canvas: FC = () => {
 
     ctx.fillStyle = "rgba(0,0,255,0.1)"; // 塗りつぶしの色
     ctx.moveTo(100, 900); // 最初の点の場所
-    ctx.lineTo(100, 900 - vertical * 10 * magnification); // 2番目の点の場所
-    ctx.lineTo(100 + beside * 10 * magnification, 900); // 3番目の点の場所
+    ctx.lineTo(100, 900 - vertical * 100 * magnification); // 2番目の点の場所
+    ctx.lineTo(100 + beside * 100 * magnification, 900); // 3番目の点の場所
     ctx.closePath(); // 三角形の最後の線 closeさせる
     ctx.strokeStyle = "rgb(0,0,0)";
     ctx.stroke();
