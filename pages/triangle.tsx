@@ -42,7 +42,7 @@ const Triangle = () => {
             onChange={(e) => {
               setInputVertical(e.target.value);
             }}
-            placeholder="縦"
+            placeholder="縦 (cm)"
             className=" mr-4 w-1/2 rounded-md border px-4 py-2 md:w-1/3"
           />
           <input
@@ -52,7 +52,7 @@ const Triangle = () => {
             onChange={(e) => {
               setInputBeside(e.target.value);
             }}
-            placeholder="横"
+            placeholder="横 (cm)"
             className=" mr-4 w-1/2 rounded-md border px-4 py-2 md:w-1/3"
           />
           <button className="btn text-base md:text-xl">変更する</button>
