@@ -33,11 +33,7 @@ const Canvas: FC = () => {
     ctx.fill();
   }, [magnification, beside, vertical]);
 
-  return (
-    <div className=" my-8 h-full w-full ">
-      <canvas className="canvas main " ref={canvasRef} />
-    </div>
-  );
+  return <canvas className="canvas main mt-8" ref={canvasRef} />;
 };
 
 export { Canvas };

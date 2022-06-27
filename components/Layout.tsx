@@ -35,7 +35,7 @@ export const Layout: FC<Title> = ({ title, children }) => {
           </div>
         </Link>
       </header>
-      <main className=" flex h-full w-full px-8 pt-8">{children}</main>
+      <main className=" flex h-full w-full px-10 pt-8">{children}</main>
     </div>
   );
 };
